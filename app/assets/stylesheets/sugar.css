@@ -15,3 +15,7 @@ h1 {
 	margin-left: 15px;
 	font-color: #666;
 }
+
+img {
+	border-radius: 10px;
+}
