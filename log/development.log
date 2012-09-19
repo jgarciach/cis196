@@ -1628,3 +1628,71 @@ Served asset /sugar.css - 200 OK (4ms)
 
 Started GET "/assets/infographic.jpeg" for 127.0.0.1 at 2012-09-17 11:54:36 -0400
 Served asset /infographic.jpeg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sugar.css" for 127.0.0.1 at 2012-09-17 11:57:47 -0400
+Served asset /sugar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/infographic.jpeg" for 127.0.0.1 at 2012-09-17 11:57:47 -0400
+Served asset /infographic.jpeg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sugar.css" for 127.0.0.1 at 2012-09-17 11:57:48 -0400
+Served asset /sugar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/infographic.jpeg" for 127.0.0.1 at 2012-09-17 11:57:48 -0400
+Served asset /infographic.jpeg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sugar.css" for 127.0.0.1 at 2012-09-17 11:58:06 -0400
+Served asset /sugar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/infographic.jpeg" for 127.0.0.1 at 2012-09-17 11:58:06 -0400
+Served asset /infographic.jpeg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sugar.css" for 127.0.0.1 at 2012-09-17 12:28:57 -0400
+Compiled sugar.css  (0ms)  (pid 2459)
+Served asset /sugar.css - 200 OK (5ms)
+
+
+Started GET "/assets/infographic.jpeg" for 127.0.0.1 at 2012-09-17 12:28:57 -0400
+Served asset /infographic.jpeg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sugar.css" for 127.0.0.1 at 2012-09-17 14:24:30 -0400
+Connecting to database specified by database.yml
+Served asset /sugar.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/infographic.jpeg" for 127.0.0.1 at 2012-09-17 14:24:30 -0400
+Served asset /infographic.jpeg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sugar.css" for 127.0.0.1 at 2012-09-17 14:24:47 -0400
+Served asset /sugar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sugar.css" for 127.0.0.1 at 2012-09-17 14:25:32 -0400
+Connecting to database specified by database.yml
+Served asset /sugar.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/infographic.jpeg" for 127.0.0.1 at 2012-09-17 14:25:33 -0400
+Served asset /infographic.jpeg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sugar.css" for 127.0.0.1 at 2012-09-17 14:25:40 -0400
+Served asset /sugar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sugar.css" for 127.0.0.1 at 2012-09-17 14:26:23 -0400
+Compiled sugar.css  (48ms)  (pid 6263)
+Served asset /sugar.css - 200 OK (53ms)
+
+
+Started GET "/assets/infographic.jpeg" for 127.0.0.1 at 2012-09-17 14:26:23 -0400
+Served asset /infographic.jpeg - 200 OK (0ms)
