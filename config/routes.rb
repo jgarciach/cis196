@@ -1,4 +1,8 @@
 Komerko::Application.routes.draw do
+  resources :sections
+
+  resources :items
+
   resources :businesses
 
   # The priority is based upon order of creation:

@@ -1696,3 +1696,18 @@ Served asset /sugar.css - 200 OK (53ms)
 
 Started GET "/assets/infographic.jpeg" for 127.0.0.1 at 2012-09-17 14:26:23 -0400
 Served asset /infographic.jpeg - 200 OK (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateBusinesses (20120914025634)
+Migrating to CreateItems (20121001152720)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121001152720')[0m
+  [1m[35m (209.6ms)[0m  commit transaction
+Migrating to CreateSections (20121001153118)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
