@@ -1711,3 +1711,471 @@ Migrating to CreateItems (20121001152720)
 Migrating to CreateSections (20121001153118)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.1ms)[0m  rollback transaction
+
+
+Started GET "/assets/infographic.jpeg" for 127.0.0.1 at 2012-10-01 11:45:41 -0400
+Connecting to database specified by database.yml
+Served asset /infographic.jpeg - 200 OK (15ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2012-10-01 11:45:51 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" [0m
+  Rendered items/index.html.erb within layouts/application (35.3ms)
+Compiled businesses.css  (28ms)  (pid 8692)
+Compiled items.css  (1ms)  (pid 8692)
+Compiled scaffolds.css  (9ms)  (pid 8692)
+Compiled sections.css  (1ms)  (pid 8692)
+Compiled sugar.css  (28ms)  (pid 8692)
+Compiled application.css  (152ms)  (pid 8692)
+Compiled jquery.js  (3ms)  (pid 8692)
+Compiled jquery_ujs.js  (0ms)  (pid 8692)
+Compiled businesses.js  (666ms)  (pid 8692)
+Compiled items.js  (97ms)  (pid 8692)
+Compiled sections.js  (106ms)  (pid 8692)
+Compiled application.js  (962ms)  (pid 8692)
+Completed 200 OK in 1594ms (Views: 1509.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-10-01 11:45:53 -0400
+Served asset /scaffolds.css - 200 OK (17ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-01 11:45:53 -0400
+Served asset /application.css - 200 OK (13ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-10-01 11:45:53 -0400
+Served asset /items.css - 200 OK (2ms)
+
+
+Started GET "/assets/businesses.css?body=1" for 127.0.0.1 at 2012-10-01 11:45:53 -0400
+Served asset /businesses.css - 200 OK (1ms)
+
+
+Started GET "/assets/sections.css?body=1" for 127.0.0.1 at 2012-10-01 11:45:53 -0400
+Served asset /sections.css - 200 OK (1ms)
+
+
+Started GET "/assets/sugar.css?body=1" for 127.0.0.1 at 2012-10-01 11:45:53 -0400
+Served asset /sugar.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-01 11:45:53 -0400
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-01 11:45:53 -0400
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/businesses.js?body=1" for 127.0.0.1 at 2012-10-01 11:45:53 -0400
+Served asset /businesses.js - 200 OK (1ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-10-01 11:45:53 -0400
+Served asset /items.js - 200 OK (1ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-10-01 11:45:53 -0400
+Served asset /sections.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-01 11:45:53 -0400
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2012-10-01 11:45:59 -0400
+Processing by ItemsController#new as HTML
+  Rendered items/_form.html.erb (79.9ms)
+  Rendered items/new.html.erb within layouts/application (102.6ms)
+Completed 200 OK in 132ms (Views: 126.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:00 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/businesses.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:00 -0400
+Served asset /businesses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:00 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:00 -0400
+Served asset /sections.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:00 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2012-10-01 11:46:04 -0400
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2AJkHhGxRiCulYBM2NWUHlk6G8QmR1byGjCm2K5mqQw=", "item"=>{"name"=>"test", "price"=>"1"}, "commit"=>"Create Item"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (48.5ms)[0m  [1mINSERT INTO "items" ("created_at", "name", "price", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 01 Oct 2012 15:46:04 UTC +00:00], ["name", "test"], ["price", 1], ["updated_at", Mon, 01 Oct 2012 15:46:04 UTC +00:00]]
+  [1m[35m (191.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/items/1
+Completed 302 Found in 245ms (ActiveRecord: 239.9ms)
+
+
+Started GET "/items/1" for 127.0.0.1 at 2012-10-01 11:46:05 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered items/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:05 -0400
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/businesses.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:05 -0400
+Served asset /businesses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:05 -0400
+Served asset /sections.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:05 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:05 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/businesses.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:05 -0400
+Served asset /businesses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:05 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:05 -0400
+Served asset /sections.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:05 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2012-10-01 11:46:08 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" 
+  Rendered items/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:08 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:08 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:08 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/businesses.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:08 -0400
+Served asset /businesses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:08 -0400
+Served asset /sections.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:08 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started DELETE "/items/1" for 127.0.0.1 at 2012-10-01 11:46:12 -0400
+Processing by ItemsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2AJkHhGxRiCulYBM2NWUHlk6G8QmR1byGjCm2K5mqQw=", "id"=>"1"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 1]]
+  [1m[35m (172.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/items
+Completed 302 Found in 176ms (ActiveRecord: 172.9ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2012-10-01 11:46:12 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" [0m
+  Rendered items/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:12 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/businesses.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:12 -0400
+Served asset /businesses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:12 -0400
+Served asset /sections.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:12 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:12 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:12 -0400
+Served asset /sections.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:12 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/sections" for 127.0.0.1 at 2012-10-01 11:46:16 -0400
+Processing by SectionsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'sections'):
+  app/controllers/sections_controller.rb:5:in `index'
+
+
+  Rendered /home/chocheman/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/chocheman/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/chocheman/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
+
+
+Started GET "/businesses" for 127.0.0.1 at 2012-10-01 11:46:42 -0400
+Processing by BusinessesController#index as HTML
+  [1m[35mBusiness Load (0.1ms)[0m  SELECT "businesses".* FROM "businesses" 
+  Rendered businesses/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-01 11:46:42 -0400
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/businesses.css?body=1" for 127.0.0.1 at 2012-10-01 11:46:42 -0400
+Served asset /businesses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-10-01 11:46:42 -0400
+Served asset /items.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/sections.css?body=1" for 127.0.0.1 at 2012-10-01 11:46:42 -0400
+Served asset /sections.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:42 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-10-01 11:46:42 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:42 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/businesses.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:42 -0400
+Served asset /businesses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:42 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:42 -0400
+Served asset /sections.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:42 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/businesses/new" for 127.0.0.1 at 2012-10-01 11:46:47 -0400
+Processing by BusinessesController#new as HTML
+  Rendered businesses/_form.html.erb (6.5ms)
+  Rendered businesses/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 43ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-01 11:46:47 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-10-01 11:46:47 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/businesses.css?body=1" for 127.0.0.1 at 2012-10-01 11:46:47 -0400
+Served asset /businesses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-10-01 11:46:47 -0400
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.css?body=1" for 127.0.0.1 at 2012-10-01 11:46:47 -0400
+Served asset /sections.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:47 -0400
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/businesses.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:47 -0400
+Served asset /businesses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:47 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:47 -0400
+Served asset /sections.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:47 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/businesses" for 127.0.0.1 at 2012-10-01 11:46:54 -0400
+Processing by BusinessesController#index as HTML
+  [1m[36mBusiness Load (0.3ms)[0m  [1mSELECT "businesses".* FROM "businesses" [0m
+  Rendered businesses/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-10-01 11:46:54 -0400
+Served asset /items.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-01 11:46:54 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/businesses.css?body=1" for 127.0.0.1 at 2012-10-01 11:46:54 -0400
+Served asset /businesses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-10-01 11:46:54 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.css?body=1" for 127.0.0.1 at 2012-10-01 11:46:54 -0400
+Served asset /sections.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:54 -0400
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:54 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/businesses.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:54 -0400
+Served asset /businesses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:54 -0400
+Served asset /sections.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:54 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-01 11:46:54 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/businesses" for 127.0.0.1 at 2012-10-01 11:48:59 -0400
+Connecting to database specified by database.yml
+Processing by BusinessesController#index as HTML
+  [1m[36mBusiness Load (0.1ms)[0m  [1mSELECT "businesses".* FROM "businesses" [0m
+  Rendered businesses/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 73ms (Views: 45.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/businesses.css?body=1" for 127.0.0.1 at 2012-10-01 11:49:00 -0400
+Served asset /businesses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-01 11:49:00 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-10-01 11:49:00 -0400
+Served asset /scaffolds.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/sugar.css?body=1" for 127.0.0.1 at 2012-10-01 11:49:00 -0400
+Served asset /sugar.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-10-01 11:49:00 -0400
+Served asset /items.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sections.css?body=1" for 127.0.0.1 at 2012-10-01 11:49:00 -0400
+Served asset /sections.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-01 11:49:00 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-01 11:49:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/businesses.js?body=1" for 127.0.0.1 at 2012-10-01 11:49:00 -0400
+Served asset /businesses.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-10-01 11:49:00 -0400
+Served asset /items.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sections.js?body=1" for 127.0.0.1 at 2012-10-01 11:49:00 -0400
+Served asset /sections.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-01 11:49:00 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/infographic.jpeg" for 127.0.0.1 at 2012-10-01 11:49:05 -0400
+Served asset /infographic.jpeg - 304 Not Modified (1ms)
